@@ -1,6 +1,11 @@
 <!--
  market: SF
 -->
+Anton Pugach
+https://github.com/SF-WDI-LABS/building-js-iterators-lab
+The exercise started out a bit difficult trying to figure out how to use the callbacks properly, but after spending a little time looking at the first 2 solutions, it started to make sense. The pattern is pretty clear here. I just was not able to get myReduce to pass all the specs (failing 1).
+
+
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
@@ -168,4 +173,3 @@ In the above output we can see that the assertion in `test/myMapSpec.js:115:38` 
 *What do you think this means?*
 
 At line 37 in the test file there was an expectation that an array would have the elements `['a', 'b', 'c', 'd']`.  But instead it got an empty array!
-

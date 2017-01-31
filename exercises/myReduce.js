@@ -4,11 +4,15 @@
 function myReduce(arr, callback, initialValue) {
 
 //  CODE INSIDE HERE   //
-    var value = initialValue || arr[0];
-    for (var i = 1; i < arr.length; i++) {
-      value = callback(value, arr[i], i, arr);
-    }
-  return value;
+  var i = 0;
+  if (!initialValue) {
+     initialValue = arr[0];
+     i = 1;
+   }
+  for (; i < arr.length; i++) {
+    initialValue = callback(initialValue, arr[i], i, arr);
+  }
+  return initialValue;
 }
 
 /*

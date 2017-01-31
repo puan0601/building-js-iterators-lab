@@ -2,8 +2,13 @@
 function myFind(arr, callback) {
 
 //  CODE INSIDE HERE   //
-
+  for (var i = 0; i < arr.length; i++) {
+    if (callback(arr[i], i, arr)) {
+      return arr[i];
+    }
+  }
 }
+
 
 /*
  Best if you don't code out here.
